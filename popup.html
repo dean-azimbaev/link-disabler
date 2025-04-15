@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link disabler</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 10px;
+      width: 180px;
+    }
+
+    #extension-settings {
+        ul {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+
+            li {
+                font-style: italic;
+            }
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <label for="toggle">
+        Blocking links
+        <input type="checkbox" id="blocking-links"/>
+    </label>
+    <span id="extension-status"></span>
+  </div>
+
+  <div id="extension-settings">
+    <h4>Settings (Shows some properties from manifest.json)</h4>
+    <ul id="exetnsion-settings-list">
+    </ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
